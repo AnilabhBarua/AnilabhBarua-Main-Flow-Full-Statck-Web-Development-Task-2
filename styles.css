@@ -1,0 +1,142 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+header {
+    background: #343a40;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-family: 'Arial Black', Gadget, sans-serif;
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+    color: #333;
+    background: url('https://img.freepik.com/free-photo/vivid-blurred-colorful-background_58702-2655.jpg?t=st=1719761956~exp=1719765556~hmac=84d63b8d564a237ee313e8c5c799be676e728223d2c2926a69cde091d2d9c2e0&w=996') no-repeat center center/cover;
+}
+
+h2 {
+    color: #343a40;
+    margin-bottom: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2em;
+}
+
+p, a {
+    font-family: 'Lucida Console', Monaco, monospace;
+    font-size: 1.2em;
+    color: #444;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #343a40;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Verdana', sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+.dropbtn:hover {
+    background-color: #555;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    z-index: 1;
+    padding: 12px 16px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-content a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    font-family: 'Verdana', sans-serif;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+footer {
+    background: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-family: 'Lucida Console', Monaco, monospace;
+}
+
+
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    section {
+        padding: 30px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .dropbtn {
+        padding: 8px;
+        font-size: 1em;
+    }
+
+    .dropdown-content {
+        min-width: 150px;
+    }
+
+    section {
+        padding: 20px 5px;
+    }
+}
